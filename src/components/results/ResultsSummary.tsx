@@ -4,11 +4,10 @@ import { MetricCard } from './MetricCard';
 
 interface ResultsSummaryProps {
   result: MortgageResult;
-  flatPrice: number;
   scenarioColor?: string;
 }
 
-export function ResultsSummary({ result, flatPrice, scenarioColor }: ResultsSummaryProps) {
+export function ResultsSummary({ result, scenarioColor }: ResultsSummaryProps) {
   if (result.loanAmount === 0) {
     return (
       <div className="bg-white rounded-xl shadow p-3 text-center text-gray-400 text-sm">
